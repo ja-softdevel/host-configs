@@ -1,8 +1,8 @@
 ---
 - name: my ansible playbook
   hosts: 127.0.0.1
-  ansible.builtin.include_vars:
-    dir: global_vars/
+  vars_files:
+   - group_vars/vault.yml
   tasks:    
     - name: print secure variable
       debug: msg="my secure variable= \n{{ ssh_priv }}"
