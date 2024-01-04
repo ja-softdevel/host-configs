@@ -6,3 +6,7 @@
   tasks:    
     - name: print secure variable
       debug: msg="my secure variable= \n{{ ssh_priv }}"
+
+    - name: test host file
+      ansible.builtin.debug:
+        msg: "{{ ansible_nodename }}"
