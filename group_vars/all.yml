@@ -1,6 +1,12 @@
 default_roles:
   - system
-  - docker
+  - packages
+  #- docker
 
 pg_db_password: "{{ pgdb_password }}"
 pg_test: "this is some kind of test"
+
+system_hosts:
+  host1: 1.1.1.1
+  host2: 2.2.2.2
+  host3: 3.3.3.3

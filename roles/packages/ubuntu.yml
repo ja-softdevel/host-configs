@@ -1,0 +1,26 @@
+---
+- name: "Install APT Packages"
+  ansible.builtin.apt:
+    name:
+      - cmake
+      - curl
+      - wget
+      - nano
+      - exa
+      - git
+      - nala
+      - pkg-config
+      - libtool
+      - unzip
+      - ansible-lint
+      - ripgrep
+      - jq
+      - neofetch
+      - htop
+      - btop
+      - sshfs
+      - mc
+      - bat
+      - zoxide
+    state: present
+  become: true
